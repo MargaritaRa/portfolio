@@ -5,7 +5,7 @@ import bolt from '../../../public/image/bolt.png'
 
 function Skills(){
     return(
-        <section className="skills">
+        <section id="skills">
             <span className="skillTitle">What I do</span>
             <span className="skillDesc">I am a skilled and passionate Software Enginneer with ecperience in python, React, and Javascript. As a recent graduate of the Flatiron School's intensive 15-week Software Engineering Bootcamp, I dedicated over 60 hours per week to mastering programming languages and frameworks such as Python, JavaScript, and React. This rigorous training involved building complex projects under tight deadlines, collaborating with peers, and tackling regular coding challenges to ensure a deep understanding of software development principles.</span>
             <div className="skillBars">
