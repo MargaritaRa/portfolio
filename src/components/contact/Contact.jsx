@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import './contact.css'
 import CG from '../../../public/image/CG.png'
 import synchrony from '../../../public/image/synchrony.png'
@@ -7,10 +8,35 @@ import yout from '../../../public/image/yout.png'
 import insta from '../../../public/image/insta.png'
 import tweet from '../../../public/image/tweet.png'
 import face from '../../../public/image/face.png'
+import emailjs from '@emailjs/browser'
+
 
 
 
 function Contact(){
+
+    const form = useRef();
+
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_sxe018q', 'template_coxdn6h', form.current, {
+            publicKey: 'NUGU2jtM-PZWkNsTu',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              e.target.reset();
+              alert('Email Sent! ')
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+
     return(
         <section id='contactPage'>
             <div id="clients">
@@ -28,11 +54,11 @@ function Contact(){
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work oppertunities.
                 </span>
-                <form action="" className="contactForm">
-                    <input type="text" className="name" placeholder='Your Name'/>
-                    <input type="email" className="email" placeholder='Your Email' />
+                <form action="" className="contactForm" ref={form} onSubmit={sendEmail}>
+                    <input type="text" className="name" placeholder='Your Name' name="your_name"/>
+                    <input type="email" className="email" placeholder='Your Email' name="your_email" />
                     <textarea name="message" rows="5" placeholder='Your message' className='msg'></textarea>
-                    <button type='submit' value='Send' className="submitBtn">Submit</button>
+                    <button type="submit" value="Send" className="submitBtn">Submit</button>
                     <div className="links">
                         <img src={face} alt="Facebook" className="link" />
                         <img src={yout} alt="Youtube" className="link" />
