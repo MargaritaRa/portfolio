@@ -11,7 +11,7 @@ function Portfolio (){
     return (
         <section id='works'>
             <h2 className="worksTitle">My Portfolio</h2>
-            <span className="workDesc">I take pride in paying attention to to smallest detales</span>
+            <span className="workDesc">I take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detales</span>
             <div className="worksImgs">
                 <img src={port1} alt="portflio1" className="worksImg" />
                 <img src={port2} alt="portflio2" className="worksImg" />
