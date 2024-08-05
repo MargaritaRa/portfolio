@@ -14,6 +14,7 @@ function Portfolio (){
             <span className="workDesc">I take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detalesI take pride in paying attention to to smallest detales</span>
             <div className="worksImgs">
                 <img src={port1} alt="portflio1" className="worksImg" />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EHO-GfcauLc?si=FQOF1gI_HfSKkjHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="worksImg"></iframe>
                 <img src={port2} alt="portflio2" className="worksImg" />
                 <img src={port3} alt="portflio3" className="worksImg" />
                 <img src={port4} alt="portflio4" className="worksImg" />
