@@ -40,14 +40,35 @@ function Contact(){
     return(
         <section id='contactPage'>
             <div id="clients">
-                <h1 className="contactPageTitle">My Clients</h1>
+                <h1 className="contactPageTitle">Resume</h1>
                 <p className="clientDesc">I have had the opertunity to work with a diverse groupe of companies. Some of the notable companies I have worked with includes
                 </p>
                 <div className="clientImgs">
-                    <img src={CG} alt="CG" className="clientImg" />
-                    <img src={synchrony} alt="synchrony" className="clientImg" />
-                    <img src={ocps} alt="ocps" className="clientImg" />
-                    <img src={contiki} alt="contiki" className="clientImg" />
+                  <img  className="clientImg" />
+                  <div className="skillBar">
+                    <img src={contiki} alt="contiki" className="clientImgs" />
+                    <div className="skillBarText">
+                        <h4>Contiki</h4>
+                        <h5>August 2023 - Present</h5>
+                        <ul>
+                          <li>
+                            Organize and execute 5 travel tours for groups of 30+ adults across 5 countries in Asia; received 95% on post trip surveys.
+                          </li>
+                          <li>
+                            Leveraged problem-solving and communication skills to execute and alter travel arrangements as needed, often with less than 24hrs notice, working closely with local suppliers, hotels, restaurants, local guides and trip drivers from diverse countries and cultures.
+                          </li>
+                          <li>
+                            Guided travelers between cities, highlighting the best attractions and experiences in each location, managing bookings and schedules, and managed and resolved personal issues, including lost items, injuries, and conflicts of personalities.
+                          </li>
+                          <li>
+                            Implemented personalized adjustments based on feedback from travelers and manager, resulting in a 20% increase in overall traveler satisfaction ratings. Received recognition from head office for exceptional customer service, including multiple love letters from travelers highlighting their favorite moments of the trip.
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                  <img src={synchrony} alt="synchrony" className="clientImg" />
+                  <img src={ocps} alt="ocps" className="clientImg" />
+                  <img src={CG} alt="CG" className="clientImg" />
                 </div>
             </div>
             <div id="contact">
