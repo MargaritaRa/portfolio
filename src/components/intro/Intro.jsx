@@ -1,5 +1,5 @@
 import './intro.css'
-import file from '../../../public/image/file.png'
+import me from '../../../public/image/me.png'
 import work from '../../../public/image/work.png'
 import { Link } from 'react-scroll'
 
@@ -12,7 +12,7 @@ function Intro (){
                 <p className="introPara">I am a skilled software engineer with experience in creating <br />fullstack development projects</p>
                 <Link><button className="btn"><img src={work} alt="Hire Me" className='btnImg' />Hire Me</button></Link>
             </div>
-            <img src={file} alt="Profile" className='file' />
+            <img src={me} alt="Profile" className='file' />
         </section>
     )
 }
