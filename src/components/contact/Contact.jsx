@@ -1,4 +1,6 @@
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
+
 import './contact.css'
 import CG from '../../../public/image/CG.png'
 import synchrony from '../../../public/image/synchrony.png'
@@ -54,16 +56,10 @@ function Contact(){
                           <li>
                             Organize and execute 5 travel tours for groups of 30+ adults across 5 countries in Asia; received 95% on post trip surveys.
                           </li>
-                          <li>
-                            Leveraged problem-solving and communication skills to execute and alter travel arrangements as needed, often with less than 24hrs notice, working closely with local suppliers, hotels, restaurants, local guides and trip drivers from diverse countries and cultures.
-                          </li>
-                          <li>
-                            Guided travelers between cities, highlighting the best attractions and experiences in each location, managing bookings and schedules, and managed and resolved personal issues, including lost items, injuries, and conflicts of personalities.
-                          </li>
-                          <li>
-                            Implemented personalized adjustments based on feedback from travelers and manager, resulting in a 20% increase in overall traveler satisfaction ratings. Received recognition from head office for exceptional customer service, including multiple love letters from travelers highlighting their favorite moments of the trip.
-                          </li>
                         </ul>
+                        <Link to="/resume">
+                          <button type='button' className='submitBtn'>Click here for the full Resume</button>
+                        </Link>
                     </div>
                 </div>
                   <img src={synchrony} alt="synchrony" className="clientImg" />
