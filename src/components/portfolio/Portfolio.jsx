@@ -1,10 +1,10 @@
 import './portfolio.css'
-import port1 from '../../../public/image/port1.png'
-import port2 from '../../../public/image/port2.png'
-import port3 from '../../../public/image/port3.png'
-import port4 from '../../../public/image/port4.png'
-import port5 from '../../../public/image/port5.png'
-import port6 from '../../../public/image/port6.png'
+import port1 from '/image/port1.png'
+import port2 from '/image/port2.png'
+import port3 from '/image/port3.png'
+import port4 from '/image/port4.png'
+import port5 from '/image/port5.png'
+import port6 from '/image/port6.png'
 
 
 function Portfolio (){

@@ -1,6 +1,6 @@
 import './intro.css'
-import me from '../../../public/image/me.png'
-import work from '../../../public/image/work.png'
+import me from '/image/me.png'
+import work from '/image/work.png'
 import { Link } from 'react-scroll'
 
 function Intro (){

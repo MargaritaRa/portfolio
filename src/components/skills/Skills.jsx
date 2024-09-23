@@ -1,7 +1,7 @@
 import './skills.css'
-import star from '../../../public/image/star.png'
-import done from '../../../public/image/done.png'
-import bolt from '../../../public/image/bolt.png'
+import star from '/image/star.png'
+import done from '/image/done.png'
+import bolt from '/image/bolt.png'
 
 function Skills(){
     return(
