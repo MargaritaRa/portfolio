@@ -22,7 +22,10 @@ function Navbar(){
 
     return(
         <nav className="navbar">
-            <img src={logo} alt="Logo" className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}/>
+            <div>
+                <img src={logo} alt="Logo" className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}/> 
+                Margarita Ramirez
+            </div>
             
             <div className="desktopMenu">
                 <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
@@ -34,7 +37,6 @@ function Navbar(){
             <button className="desktopMenuButton" onClick={() =>{
                 document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
                 }}>
-                <img src={contact1} alt="" className="destopMenuImg" />
                 Contact Me
             </button>
 

@@ -21,9 +21,9 @@
 }
 
 .desktopMenuListItem:hover{
-    columns: rgb(255, 225, 0);
+    columns: rgb(255, 200, 0);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgb(255, 225, 0);
+    border-bottom: 3px solid rgb(255, 200, 0);
 }
 
 .desktopMenuListItem {
@@ -32,8 +32,9 @@
 }
 
 .desktopMenuButton {
-    background: antiquewhite;
-    color: black;
+    font-family: "Spicy Rice", system-ui;
+    background: rgb(230, 133, 6);
+    color: rgb(0, 0, 0);
     border: none;
     display: flex;
     align-items: center;
@@ -50,9 +51,9 @@
 }
 
 .active{
-    color: rgb(255, 225, 0);
+    color: rgb(255, 200, 0);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgb(255, 225, 0);
+    border-bottom: 3px solid rgb(255, 200, 0);
 }
 
 .mobMenu{
