@@ -22,9 +22,8 @@ function Navbar(){
 
     return(
         <nav className="navbar">
-            <div>
-                <img src={logo} alt="Logo" className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}/> 
-                Margarita Ramirez
+            <div className="myName" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
+            🌙Margarita Ramirez
             </div>
             
             <div className="desktopMenu">

@@ -129,12 +129,12 @@
     border-radius: 0.5rem;
 }
 
-.skillBarImg{
+/* .skillBarImg{
     object-fit: cover;
     height: 3rem;
     width: 3rem;
     margin-right: 2rem;
-}
+} */
 
 .skillBarText>p{
     font-size: 0.9rem;

@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Intro />
               <Skills />
+              <Intro />
               <Portfolio />
               <Contact />
             </>

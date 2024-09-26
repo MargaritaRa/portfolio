@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Spicy+Rice&display=swap');
+
 
 #intro{
-    background: linear-gradient(0deg, rgba(0,0,0,1) 21%, rgba(0,49,33,1) 20%);
+    background-color: #f7f0dc;
     background-size: cover;
     background-position: center;
+    color: black;
     height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 75rem;
+    max-width: 65rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -20,19 +21,26 @@
     z-index: -1;
     object-fit: cover;
     height: 100vh;
-}
+    margin-right: 50px;
+    margin-top: 50px;
+} 
+/*.file {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+} */
 
 .intoContent{
     border-radius: 2rem;
-    border-color: antiquewhite;
     height: 100vh;
-    width: 100vw;
+    width: 50%;
     padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto 50px;
 }
 
 .hello{
@@ -41,18 +49,29 @@
     font-weight: 100;
 }
 .introName{
-    color: rgb(255, 200, 0);
+    color: rgb(230, 133, 6);
 }
 .introName, .introText {
     font-family: "Spicy Rice", serif;
 }
+.introText {
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 .introPara{
-    font-size:small;
+    font-size:x-small;
     font-weight: 300;
     letter-spacing: 1px;
-    width: 50%;
+    width: 65%;
+    /* margin: auto; */
 }
+/* .introPara {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    width: 90%;
+    margin-top: 1rem;
+} */
 
 .btn{
     background: rgb(230, 133, 6);

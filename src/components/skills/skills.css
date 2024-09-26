@@ -1,56 +1,135 @@
-#skills{
-    background-color: antiquewhite;
-    overflow: hidden;
-    width: 100vw;
-    max-width: 65rem;
-    margin: 0;
+#skills {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgb(0, 49, 33) 20%);
+    padding: 2rem 0;
     text-align: center;
-    margin: 0 auto;
-}
-.skillTitle{
-    color: black;
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-.skillDesc{
-    color: black;
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-}
-.skillBars{
-    margin: 1.5rem;
+    color: #e3e3d6;
+    overflow: hidden;
     width: 100vw;
-    max-width: 80%;
-    text-align: left;
+    max-width: 1200px;
+    margin: 0;
 }
 
-.skillBar{
-    background: rgb(0, 49, 33) !important;
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem; 
+.skillTitlee{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(227, 227, 214, 0.7);
+    position: relative;
+    z-index: 3;
+    left: 10%;
+}
+.skillTitlee::before {
+    content: 'Portfolio';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 8rem;
+    opacity: 0.2;
+    color: rgb(227, 227, 214, 0.6);
 }
 
-.skillBarImg{
+.skillTitlehollow{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 6rem;
+    font-weight: 600;
+    color: #e68506;
+    position: relative;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+}
+.skillTitlehollow::before {
+    content: 'Portfolio';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 8rem;
+    opacity: 0.2;
+    color: #e68506;
+}
+.skillBarImg {
+    position: absolute;
+    top: 28%;
+    left: 19%;
+    z-index: 2;
+    filter: brightness(0.85);
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
+    width: 25rem;
+    height: 22rem;
+    border-radius: 5%;
 }
+.socialMedia {
+    position: absolute;
+    font-size: 1.2rem;
+    color: rgb(227, 227, 214);
+    margin: 0 0 70px 55%;
+    background-color: rgb(0, 49, 33);
+    padding: 3rem 1rem;
+    text-align: left;
+    z-index: 2;
+    top: 39%;
+    left: 18%;
+}
+
+.statment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #e3e3d6;
+    margin: 2rem 50% 0 0;
+    text-align: left;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 49, 33, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+.scrollButton {
+    background-color: transparent;
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    padding: .45rem .45rem;
+    border-color: #e3e3d6;
+    border-radius: 100px;
+    text-align: center;
+    /* margin-top: 2rem; */
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
 
 .skillBarText>p{
     font-size: 0.9rem;
     font-weight: 200;
 }
+
+@media screen and (max-width: 1024px) {
+    #skills {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .skillBarImg {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .skillTitle {
+        font-size: 5rem;
+    }
+    .skillTitlehollow {
+        font-size: 6rem;
+    }
+}
+
 
 @media screen and (max-width:720px){
     .skillBarText>p{
@@ -69,4 +148,4 @@
     .skillBarText>h2{
         font-size: 5vw;
     }
-}
+}  
