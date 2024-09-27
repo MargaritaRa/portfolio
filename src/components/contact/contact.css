@@ -1,4 +1,5 @@
-#contactPage {
+/* Main container */
+/* #contactPage {
     background-color: #f7f0dc;
     padding: 2rem;
     min-height: 100vh;
@@ -6,133 +7,26 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
 /* Section titles */
-.contactPageTitle, .educationClass, .experienceTitle {
+/* .educationClass, .experienceTitle, .skillsTitle {
     font-family: 'Cinzel Decorative', serif;
     color: rgb(230, 133, 6);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
-}
+} */
 
-.clientDesc, .contactDesc {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    font-weight: 300;
-}
-
-/* Client logos grid */
-.clientImgs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-}
-
-.clientImg {
-    width: 15%;
-    min-width: 9rem;
-    margin: 0.5rem;
-    border-radius: 10px;
-    object-fit: fill;
-}
-
-/* Layout container for education, experience, and technical skills */
-.education-experience-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 65rem;
-    margin-bottom: 3rem;
-}
-
-/* Tables */
-.education, .experience, .technicalSkills {
-    width: 45%;
-    margin-bottom: 2rem;
-    border-collapse: collapse;
-}
-.education, .experience {
-    background-color: rgb(230, 133, 6);
-    color: rgb(0, 49, 33);
-}
-
-.education th, .experience th {
-    text-align: left;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-.year{
-    font-family: 'Cinzel Decorative', serif;
-    font-size: large;
-    font-weight: 600;
-    color: black;
-}
-.school, .work, .position, .degree {
-    padding-left: 1rem;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 49, 33);
-}
-.degree, .position {
-    text-align: left;
-    padding-left: 2rem;
-    color: black;
-}
-
-/* Technical skills and tags */
-.technicalSkills {
-    background-color: #f7f0dc;
-    color: rgb(0, 49, 33);
-}
-.tags-container{
-    width: 65%;
-    background-color: rgb(230, 133, 6);
+/* Tags */
+/* .tags-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
-}
-.experience {
-    background-color: rgb(230, 133, 6);
-}
+} */
 
-.educationClass, .experienceTitle {
-    font-family: 'Spicy Rice', serif;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-#clients {
-    padding: 2rem;
-}
-
-.experienceTitle {
-    color:rgb(0, 49, 33);
-}
-.educationClass{
-    color: rgb(230, 133, 6);
-}
-.educationClass, .experienceTitle{
-    font-family: "Spicy Rice", serif;
-    text-align: center;
-    align-items: center;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}  
-.tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-.tags{
+/* .tags {
     background-color: black;
     color: antiquewhite;
     font-size: small;
@@ -142,66 +36,52 @@ th, td {
     padding: 1rem 1.5rem;
     margin: 0.5rem;
     cursor: pointer;
-}
-#contact {
+} */
+
+/* Education and experience section */
+/* .education-experience-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 65rem;
+    margin-bottom: 3rem;
 }
 
-/* Contact form styling */
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 40rem;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.name, .email, .msg {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: rgb(0,49,33);
-    color:antiquewhite;
+.education, .experience, .technicalSkills, .languages, .activities, .hobbies {
+    width: 45%;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
 }
 
-.submitBtn {
+.education, .experience {
     background-color: rgb(230, 133, 6);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.75rem 2rem;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    color: rgb(0, 49, 33);
 }
 
-/* Social media icons */
-.links {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+.education th, .experience th, .technicalSkills th {
+    text-align: left;
 }
 
-.link {
-    margin: 0 1rem;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-.skillBarText>p{
-    font-size: 0.9rem;
-    font-weight: 200;
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
-/* Section for hobbies and languages */
-#me {
+.year {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: large;
+    font-weight: 600;
+    color: black;
+}
+
+.school, .work, .position, .degree {
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 49, 33);
+} */
+
+/* Hobbies and interests section */
+/* #me {
     background-color: rgb(0, 49, 33);
     color: antiquewhite;
     padding: 2rem;
@@ -209,38 +89,31 @@ th, td {
     margin-bottom: 2rem;
 }
 
-table.activites, #me table {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-}
-
-table.activites td, #me table td, #me table th {
+.icons td {
     padding: 10px;
     text-align: center;
 }
 
-#me table th {
-    font-size: 1.25rem;
-    color: rgb(230, 133, 6);
-}
-
-#me td svg {
+.icons svg {
     width: 2rem;
     height: 2rem;
     color: antiquewhite;
 }
 
-
+.iconsName td {
+    padding: 5px;
+    text-align: center;
+    color: antiquewhite;
+} */
 
 /* Responsive design */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .education-experience-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .education, .experience, .technicalSkills {
+    .education, .experience, .technicalSkills, .languages, .activities, .hobbies {
         width: 90%;
         margin-bottom: 2rem;
     }
@@ -248,42 +121,7 @@ table.activites td, #me table td, #me table th {
     .tags-container {
         justify-content: center;
     }
-
-    .name, .email, .msg {
-        font-size: 0.9rem;
-    }
-
-    .submitBtn {
-        font-size: 1rem;
-    }
-
-    .links {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .link {
-        margin: 0.5rem 0;
-        width: 30px;
-        height: 30px;
-    }
-}
-
-@media screen and (max-width:720px){
-    .skillBarText>p{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width:480px){
-    .skillBarText>p{
-        font-size: 3vw;
-    }
-    .skillBarImg{
-        height: 2.25rem;
-        width: 2.25rem;
-    }
-    .skillBarText>h2{
-        font-size: 5vw;
-    }
+} */
+.container mx-auto py-12{
+    background-color: antiquewhite;
 }
